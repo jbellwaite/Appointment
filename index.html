@@ -10,84 +10,45 @@
   <body>
     <div class="container">
       <h1>Appointments</h1>
-      <form id="name">
+      <form id="formOne">
         <div class="form-group">
-          <label for="firstName1">Enter your first name:</label>
+          <label for="firstName1">Enter our first name:</label>
           <input id="firstName1" class="form-control" type="text">
         </div>
         <div class="form-group">
           <label for="lastName2">Enter your last name:</label>
           <input id="lastName2" class="form-control" type="text">
         </div>
-        <button type="submit" class="btn">name!</button>
-      </form>
 
-      <form id="subtract">
         <div class="form-group">
-          <label for="subtract1">1st number:</label>
-          <input id="subtract1" class="form-control" type="text">
+          <label for="appointmentDescription1">Reason for appointment:</label>
+          <input id="appointmentDescription1" class="form-control" type="text">
         </div>
-        <div class="form-group">
-          <label for="subtract2">2nd number:</label>
-          <input id="subtract2" class="form-control" type="text">
-        </div>
-        <button type="submit" class="btn">Subtract!</button>
-      </form>
-      <form id="multiply">
-        <div class="form-group">
-          <label for="multiply1">1st number:</label>
-          <input id="multiply1" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="multiply2">2nd number:</label>
-          <input id="multiply2" class="form-control" type="text">
-        </div>
-        <button type="submit" class="btn">Multiply!</button>
-      </form>
-      <form id="divide">
-        <div class="form-group">
-          <label for="divide1">1st number:</label>
-          <input id="divide1" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="divide2">2nd number:</label>
-          <input id="divide2" class="form-control" type="text">
-        </div>
-        <button type="submit" class="btn">Divide!</button>
-      </form>
-      <div id="output">
- -->
 
-   <select class="form-control" id="beverage">
-    <option value="1">Coffee</option>
-    <option value="2">Tea</option>
-    <option value="3">Kombucha</option>
-    <option value="4">Water</option>
-  </select>
+        <div class="form-group">
+          <label for="appointmentDate1">Date of Appointment:</label>
+          <input id="appointmentDate1" class="form-control" type="text">
+        </div>
 
-     <div class="radio">
-       <label>
-         <input type="radio" name="flavor" value="chocolate" checked>
-         Chocolate
-       </label>
-     </div>
-     <div class="radio">
-       <label>
-         <input type="radio" name="flavor" value="vanilla">
-         Vanilla
-       </label>
-     </div>
-     <div class="radio">
-       <label>
-         <input type="radio" name="flavor" value="cookiesandcream">
-         Cookies & Cream
-       </label>
-     </div>
+        <div class="form-group">
+          <label for="startTime1">Between this time:</label>
+          <input id="startTime1" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="endTime1">and this time:</label>
+          <input id="endTime1" class="form-control" type="text">
+        </div>
+       <button type="submit" class="btn">Submit</button>
 
-     <div id="output">
-     <form id="receipt">
-       <button type="submit" class="btn">receipt</button>
+    </form>
+
+       <div id="story">
+        <p>Here is the information about your appointment:</p>
+
+        <p><span class="firstName1"></span> <span class="lastName2"></span>, your appointment for <span class="appointmentDescription1"></span> is on <span class="appointmentDate1"></span>, between <span class="startTime1"></span> and <span class="endTime1"></span>. Thank you.</p>
+
      </form>
      </div>
+   </div>
   </body>
 </html>
