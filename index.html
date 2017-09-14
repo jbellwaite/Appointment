@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Appointment</title>
+    <title>Survey</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
@@ -9,10 +9,10 @@
   </head>
   <body>
     <div class="container">
-      <h1>Appointments</h1>
+      <h1>Survey</h1>
       <form id="formOne">
         <div class="form-group">
-          <label for="firstName1">Enter our first name:</label>
+          <label for="firstName1">Enter your first name:</label>
           <input id="firstName1" class="form-control" type="text">
         </div>
         <div class="form-group">
@@ -20,31 +20,34 @@
           <input id="lastName2" class="form-control" type="text">
         </div>
 
-        <div class="form-group">
-          <label for="appointmentDescription1">Reason for appointment:</label>
-          <input id="appointmentDescription1" class="form-control" type="text">
-        </div>
+        <select class="form-control" id="favoritebev">
+          <label for="favoritebev">What is your favorite beverage?</label>
+          <option>Coffee</option>
+          <option>Tea</option>
+          <option>Kombucha</option>
+          <option>Water</option>
+        </select>
 
         <div class="form-group">
           <label for="appointmentDate1">Date of Appointment:</label>
           <input id="appointmentDate1" class="form-control" type="date">
         </div>
 
-        <div class="form-group">
-          <label for="startTime1">Between this time:</label>
-          <input id="startTime1" class="form-control" type="text">
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="chocolate">
+            Chocolate
+          </label>
         </div>
-        <div class="form-group">
-          <label for="endTime1">and this time:</label>
-          <input id="endTime1" class="form-control" type="text">
-        </div>
-       <button type="submit" class="btn">Submit</button>
-
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="vanilla">
+            Vanilla
+            </label>
     </form>
+<br>
+<button type="submit" class="btn">Submit your survey</button>
 
-      <div id="story">
-        <p>Here is the information about your appointment:</p>
-        <p><span class="firstName1"></span> <span class="lastName2"></span>, your appointment for <span class="appointmentDescription1"></span> is on <span class="appointmentDate1"></span>, between <span class="startTime1"></span> and <span class="endTime1"></span>. Thank you.</p>
      </div>
 
    </form>
